@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/logo.png" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link href="/src/style.css" rel="stylesheet">
+    <title>Demo CRM</title>
+    <style>
+
+
+/* Add this inside your <style> tag or global CSS */
+.PhoneInput {
+  width: 100%;
+  border-radius: 0.5rem; /* same as your other inputs */
+  background-color: rgba(30, 58, 138, 0.85); /* your form bg */
+  border: 1px solid #4b5563; /* border-secondary-600 */
+  color: #fff;
+  padding: 0.75rem 1rem 0.75rem 3rem; /* left padding for flag */
+  font-size: 5px;
+  outline: none;
+  transition: all 0.2s;
+}
+
+.PhoneInput:focus {
+  border-color: #3b82f6; /* Tailwind blue-500 focus ring */
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
+}
+
+.PhoneInputCountrySelect {
+  background-color: rgba(30, 58, 138, 0.85);
+  border: none;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.PhoneInputCountryIcon {
+  vertical-align: middle;
+}
+
+.PhoneInputCountrySelectArrow {
+  color: #fff;
+}
+
+.PhoneInputInput::placeholder {
+  color: #9ca3af; /* placeholder-gray-400 */
+}
+
+
+      /* Smooth and animated scrollbar */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+   /* background: linear-gradient(to bottom, #46e561, #81772e,pink,rgb(0, 92, 128));   */
+   background: linear-gradient(to bottom,#0cea99, #da6de6,#2ca4bf); 
+border-radius: 9999px;
+  transition: background 0.3s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+   /* background: linear-gradient(to bottom, #63f18b, #ca9e38);  */
+   background: linear-gradient(to bottom, #0cea99, #da6de6,#2ca4bf);
+
+}
+
+
+/* ----- Neon / glassy horizontal scrollbar ----- */
+.scrollbar-neon{
+  scrollbar-gutter: stable;
+  scrollbar-width: thin;                      /* Firefox */
+  scrollbar-color: rgba(34,211,238,.55) rgba(255,255,255,.06);  /* thumb track */
+}
+
+/* Chrome / Edge / Safari */
+.scrollbar-neon::-webkit-scrollbar{
+  height: 10px;               /* horizontal thickness */
+}
+
+.scrollbar-neon::-webkit-scrollbar-track{
+  background: rgba(255,255,255,.06);
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.10);
+}
+
+.scrollbar-neon::-webkit-scrollbar-thumb{
+  background: linear-gradient(90deg,
+    rgba(16,185,129,.85),
+    rgba(34,211,238,.85),
+    rgba(236,72,153,.80)
+  );
+  border-radius: 999px;
+  border: 2px solid rgba(0,0,0,.35); /* gives “pill” look on dark bg */
+}
+
+.scrollbar-neon::-webkit-scrollbar-thumb:hover{
+  background: linear-gradient(90deg,
+    rgba(16,185,129,1),
+    rgba(34,211,238,1),
+    rgba(236,72,153,.95)
+  );
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+
+  </body>
+</html>

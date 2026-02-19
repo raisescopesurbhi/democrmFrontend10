@@ -1,0 +1,43 @@
+@import "tailwindcss";     /* Better mobile viewport behavior */
+
+
+html, body, #root {
+  height: 100%;
+}
+
+/* Smooth scrolling */
+.user-custom-scrollbar {
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: rgba(34,197,94,0.55) rgba(255,255,255,0.06);
+}
+
+/* Webkit scrollbars */
+.user-custom-scrollbar::-webkit-scrollbar {
+  width: 10px;
+}
+.user-custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(255,255,255,0.06);
+  border-radius: 999px;
+}
+.user-custom-scrollbar::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    180deg,
+    rgba(34,197,94,0.65),
+    rgba(59,130,246,0.55),
+    rgba(236,72,153,0.55)
+  );
+  border-radius: 999px;
+  border: 2px solid rgba(0,0,0,0.35);
+}
+.user-custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  filter: brightness(1.1);
+}
+
+/* Optional: hide scrollbar if you apply `scrollbar-hidden` class somewhere */
+.scrollbar-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
