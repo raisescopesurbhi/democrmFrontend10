@@ -41,3 +41,5 @@ html, body, #root {
 .scrollbar-hidden::-webkit-scrollbar {
   display: none;
 }
+
+/* Scrolling side bar */
